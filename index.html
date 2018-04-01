@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>lesson1</title>
+</head>
+<body>
+	
+<script>
+	// var personValue = Number(prompt('Please enter digits'));
+
+	
+	// if (personValue < 0) {
+		
+		
+		
+	// }else if(personValue == 0) {
+	// 	alert('Nothing to show');
+	// }else {
+	// 	var summa = 0;
+	// 	for (var i = 1; i <= personValue; i++) {
+	// 		var summa = summa + i;
+	// 	}
+	// 	alert(summa);
+		
+	// }
+
+
+	var personValue = Number(prompt('please, enter any number'));
+
+	var listDigits = [];
+	if(personValue > 0 && personValue <= 50) {
+		for (var i = 1; i <= personValue; i++) {
+			if((i % 5) === 0 && (i % 3) !== 0) {
+				listDigits.push(i);
+				alert(listDigits);
+			}			
+		}
+	}
+	else {
+		alert('please text number more 0 until 50');
+	}
+	
+
+</script>
+</body>
+</html>
